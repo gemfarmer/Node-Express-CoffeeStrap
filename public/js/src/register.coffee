@@ -1,5 +1,5 @@
 # check database to see if unique fields exist in the database
-checkExists(field, value) ->
+checkExists = (field, value) ->
 	data = {};
 	data[field] = value;
 	helpContainer = $('#'+field).parent().find('span');
@@ -10,7 +10,8 @@ checkExists(field, value) ->
 		type: 'GET',
 		data: data
 	}
-	.done (reply) ->
+	
+	.done(reply) ->
 		# decode the reply and act accordingly
 		helpContainer.text('That '+field+' is available!');
 		thisDiv.addClass('success');
@@ -21,7 +22,7 @@ checkExists(field, value) ->
 		setTimeout(callback, 1000);
 		return true;
 	
-	.fail (xhr, err) ->
+	.fail(xhr, err) ->
 		# decode the error, clear out the field, display message accordingly
 		if(xhr.status==409)
 			thisDiv.addClass('error');
@@ -34,14 +35,15 @@ checkExists(field, value) ->
 			$('#'+field).focus();
 			
 		return false;
+	
 	return
 
-
-$ () ->
+$ ->
 
 	# once form is completly filled out, registration button becomes clickable
 	$(':input[required]').change () ->
 		thisField = $(this).attr('name');
+		console.log(thisField)
 		readyToGo = true;
 		if (thisField == 'username')
 			$(this).parents('.control-group').removeClass('error');

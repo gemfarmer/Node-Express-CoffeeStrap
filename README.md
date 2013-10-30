@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Node-Express-Strap
 
 ![alt tag](/public/img/github_splash.png)
@@ -8,9 +8,9 @@ This is a basic node boilerplate complete with user authentication, meant for ra
 
 ### Quick Setup
 
-1. Clone
+1. Clone Repository `git clone https://github.com/gemfarmer/Node-Express-CoffeeStrap.git`
 2. `npm install`
-3. `node app.js` or `supervisor app`
+3. `cake dev` or `supervisor lib/app.js`
 
 ### Main Tools
 
@@ -40,12 +40,9 @@ For more info and version info, look at the `package.json` file.
 3. Add Mocha unit tests
 4. Add social auth
 
-## Todo Brian
-1. --DONE-- Convert to CoffeeScript
-2. --DONE-- Create Cakefile to run Coffee
+
 =======
 Node-Express-CoffeeStrap
 ========================
 
 Bootstrap for Node.js that includes Express, Jade, MongoDB, and Authentication. Written in CoffeeScript
->>>>>>> origin
