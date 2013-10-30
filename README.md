@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 # Node-Express-Strap
 
+![alt tag](/public/img/github_splash.png)
 ### Node/Express/MongoDB/Passport/Bootstrap
 
 This is a basic node boilerplate complete with user authentication, meant for rapid web development. Get your app quickly!

@@ -2,10 +2,10 @@
 
 config = {};
 
-config.name = 'Node-Express-Strap';
-config.dbname = 'nodeboilerstrap';
+config.name = 'Node-Express-CoffeeStrap';
+config.dbname = 'nodecoffeeboilerstrap';
 config.sessionSecret = 'myprecious';
-config.port = 4000;
+config.port = 1337;
 config.someAPIkey = 'asdfasdfaksafaasdfa'; # like twitter or facebook for example
 
 module.exports = config;
