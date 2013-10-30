@@ -20,7 +20,7 @@ module.exports = {
 		}
 		return
 
-  # app.get('/about'...)
+	# app.get('/about'...)
 	about: (req, res) ->
 		res.render 'about.jade', {
 			title: 'About ' + app.locals.config.name,
@@ -28,8 +28,8 @@ module.exports = {
 		}
 		return
 
- 	# app.get('/about/tos'...)
- 	tos: (req, res) ->
+	# app.get('/about/tos'...)
+	tos: (req, res) ->
 		res.render 'tos.jade', {
 			title: app.locals.config.name + ' Terms of Service',
 			user: req.user

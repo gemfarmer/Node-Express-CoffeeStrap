@@ -15,12 +15,13 @@ This is a basic node boilerplate complete with user authentication, meant for ra
 
 1. Node
 2. Express
-3. MongoDB
-4. Mongoose
-5. Passport
-6. Jade
-7. JQuery
-8. Bootstrap
+3. CoffeeScript
+4. MongoDB
+5. Mongoose
+6. Passport
+7. Jade
+8. JQuery
+9. Bootstrap
 
 For more info and version info, look at the `package.json` file.
 

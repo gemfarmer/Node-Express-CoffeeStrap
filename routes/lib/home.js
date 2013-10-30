@@ -23,10 +23,8 @@
         title: 'About ' + app.locals.config.name,
         user: req.user
       });
-      return;
-      ({
-        tos: function(req, res) {}
-      });
+    },
+    tos: function(req, res) {
       res.render('tos.jade', {
         title: app.locals.config.name + ' Terms of Service',
         user: req.user
