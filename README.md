@@ -2,7 +2,7 @@
 # Node-Express-Strap
 
 
-check out JavaScript version at: https://github.com/mjhea0/Node-Express-Strap
+Prefer plain ol' JavaScript? https://github.com/mjhea0/Node-Express-Strap
 
 ![alt tag](/public/img/github_splash.png)
 ### Node/Express/MongoDB/Passport/Bootstrap
@@ -35,6 +35,10 @@ For more info and version info, look at the `package.json` file.
 2. `config.js` - provides application variables such as API Keys, site name, port. For production, be sure to include confidential configurations as enviornment variables.
 3. `database.js` - connecting/disconnecting from the database
 4. `navigation.js` - navigation links for bootstrap
+
+## Contribute!
+
+Fork the repo and contribute. Check off some of the items on the TO-DO list below!
 
 ### Todo
 
