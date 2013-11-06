@@ -12,7 +12,7 @@
       url: '/checkExists',
       type: 'GET',
       data: data
-    }.done(reply)(function() {
+    }).done(function(reply) {
       var callback;
       helpContainer.text('That ' + field + ' is available!');
       thisDiv.addClass('success');
@@ -22,7 +22,7 @@
       };
       setTimeout(callback, 1000);
       return true;
-    }).fail(xhr, err)(function() {
+    }).fail(function(xhr, err) {
       if (xhr.status === 409) {
         thisDiv.addClass('error');
         helpContainer.text('Oops! That ' + field + ' is already taken!');
@@ -33,7 +33,7 @@
         $('#' + field).focus();
       }
       return false;
-    }));
+    });
   };
 
   $(function() {

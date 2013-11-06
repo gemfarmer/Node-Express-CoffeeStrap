@@ -5,13 +5,13 @@ checkExists = (field, value) ->
 	helpContainer = $('#'+field).parent().find('span');
 	thisDiv = $('#'+field).parents('.control-group');
 
-	$.ajax {
+	$.ajax({
 		url: '/checkExists',
 		type: 'GET',
 		data: data
-	}
+	})
 	
-	.done(reply) ->
+	.done (reply) ->
 		# decode the reply and act accordingly
 		helpContainer.text('That '+field+' is available!');
 		thisDiv.addClass('success');
@@ -22,7 +22,7 @@ checkExists = (field, value) ->
 		setTimeout(callback, 1000);
 		return true;
 	
-	.fail(xhr, err) ->
+	.fail (xhr, err) ->
 		# decode the error, clear out the field, display message accordingly
 		if(xhr.status==409)
 			thisDiv.addClass('error');
