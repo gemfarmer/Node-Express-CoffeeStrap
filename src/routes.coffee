@@ -24,9 +24,8 @@ isAdmin = (req, res, next) ->
 module.exports = (app) ->
 	app.get('/', home.index);
 	app.get('/login', home.login);
-	app.post '/login', 
-	passport.authenticate 'local', 
-	{failureRedirect: '/login'}, 
+	app.post '/login',
+	passport.authenticate('local', {failureRedirect: '/login'}), 
 	(req, res) ->
 		res.redirect('/')
 		return

@@ -1,6 +1,6 @@
 # authentication 
 
-passport = require('passport')
+passport = require('passport') 
 LocalStrategy = require('passport-local').Strategy;
 
 User = require('./../models/lib/user');
@@ -9,7 +9,12 @@ passport.use(new LocalStrategy(
 	{
 		usernameField: 'username'
 	}, (username, password, done) ->
+		console.log(username, password)
+		# console.log("err", err)
+		console.log("user", user)
+		console.log("message", message) 
 		User.authenticate username, password, (err, user, message) ->
+
 			return done(err, user, message);
 		return
 ))

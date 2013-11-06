@@ -75,18 +75,18 @@
         return callback(null, false, {
           message: 'Unknown user: ' + username
         });
-        user.verifyPassword(password, function(err, passwordCorrect) {
-          if (err) {
-            return callback(err);
-          }
-          if (!passwordCorrect) {
-            return callback(null, false, {
-              message: 'Invalid password'
-            });
-          }
-          return callback(null, user);
-        });
       }
+      user.verifyPassword(password, function(err, passwordCorrect) {
+        if (err) {
+          return callback(err);
+        }
+        if (!passwordCorrect) {
+          return callback(null, false, {
+            message: 'Invalid password'
+          });
+        }
+        return callback(null, user);
+      });
     });
   });
 

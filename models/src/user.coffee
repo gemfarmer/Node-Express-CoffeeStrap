@@ -40,12 +40,12 @@ UserSchema.static 'authenticate', (username, password, callback) ->
 			return callback(err);
 		if (!user)
 			return callback(null, false, { message: 'Unknown user: ' + username} );
-			user.verifyPassword password, (err, passwordCorrect) ->
-				if (err) 
-					return callback(err);
-				if (!passwordCorrect) 
-					return callback(null, false, { message: 'Invalid password'}); 
-				return callback(null, user);
-			return
+		user.verifyPassword password, (err, passwordCorrect) ->
+			if (err) 
+				return callback(err);
+			if (!passwordCorrect) 
+				return callback(null, false, { message: 'Invalid password'}); 
+			return callback(null, user);
+		return
 	return
 module.exports = mongoose.model('User', UserSchema);
