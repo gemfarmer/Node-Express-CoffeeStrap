@@ -1,6 +1,9 @@
 
 # Node-Express-Strap
 
+
+check out JavaScript version at: https://github.com/mjhea0/Node-Express-Strap
+
 ![alt tag](/public/img/github_splash.png)
 ### Node/Express/MongoDB/Passport/Bootstrap
 

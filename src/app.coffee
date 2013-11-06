@@ -16,7 +16,7 @@ app.locals.config = config;
 
 # connect to the database
 DB = require('./database');
-db = new DB.startup( process.env.MONGOHQ_URL ? 'mongodb://localhost/'+config.dbname);
+db = new DB.startup('mongodb://localhost/'+config.dbname);
 
 # sessions
 storeConf = {
