@@ -2,7 +2,7 @@
 
 config = {};
 
-config.name = 'Node-Express-CoffeeStrap';
+config.name = 'Express-CoffeeStrap';
 config.dbname = 'nodecoffeeboilerstrap';
 config.sessionSecret = 'myprecious';
 config.port = 1337;
